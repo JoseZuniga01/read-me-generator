@@ -120,6 +120,10 @@ const writeFile = data => {
 }; 
 
 // TODO: Create a function to initialize app
+
+
+// Function call to initialize app
+questions()
 .then(answers => {
     return generatePage(answers);
 })
@@ -131,6 +135,3 @@ const writeFile = data => {
 .catch(err => {
     console.log(err)
 })
-
-// Function call to initialize app
-questions()
